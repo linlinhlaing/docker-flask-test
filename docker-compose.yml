@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      PORT: 5001
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - /path/to/host/cache:/pip_cache
+      - /path/to/host/tmp:/pip_tmp
