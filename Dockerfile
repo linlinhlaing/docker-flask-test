@@ -18,5 +18,5 @@ EXPOSE 5000
 # Define environment variable to prevent Python from buffering outputs
 ENV PYTHONUNBUFFERED=1
 
-# Start the Flask application server using Gunicorn
-CMD gunicorn flask_app:app --bind 0.0.0.0:$PORT --timeout=600 --threads=10
+# Run the Flask app
+CMD ["python", "app.py"]
