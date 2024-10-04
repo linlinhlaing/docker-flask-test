@@ -85,5 +85,5 @@ Accessing the Application in web browser
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 Accessing the application in postman
-
+is
 <img src="images/postman.png" alt="Image 1" width="80%" height="100%">
